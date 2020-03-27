@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <title>App de notas</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Notas📝</h1>
+            <button class="add-note" id="add-note">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"
+                    />
+                </svg>
+            </button>
+        </div>
+
+        <div class="notes__container" id="notes__container">
+
+        </div>
+
+        <div class="modal__container" id="modal__container">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3>Crear Nota</h3>
+                    <button class="modal-close" id="modal-close">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5 15.538l-3.592-3.548 3.546-3.587-1.416-1.403-3.545 3.589-3.588-3.543-1.405 1.405 3.593 3.552-3.547 3.592 1.405 1.405 3.555-3.596 3.591 3.55 1.403-1.416z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <form class="modal-content" id="modal-content">
+                    <h4>Título de la nota</h4>
+                    <input type="text" class="modal-title" placeholder="Título" id="modal-title">
+                    <h4>Escoge el color de tu nota</h4>
+                    <div class="color-box__container">
+                        <input type="radio" name="radio" id="red" class="color-box red" checked><label class="red" for="red"></label></input>
+                        <input type="radio" name="radio" id="blue" class="color-box blue"><label class="blue" for="blue"></label></input>
+                        <input type="radio" name="radio" id="green" class="color-box green"><label class="green" for="green"></label></input>
+                        <input type="radio" name="radio" id="orange" class="color-box orange"><label class="orange" for="orange"></label></input>
+                        <input type="radio" name="radio" id="purple" class="color-box purple"><label class="purple" for="purple"></label></input>
+                    </div>
+                    <h4>Agrega el mensaje de tu nota</h4>
+                    <div class="modal-message__container">
+                        <textarea
+                            class="modal-message"
+                            placeholder="Ingrese el mensaje de su nota"
+                            id="modal-message"
+                            rows="11"
+                        ></textarea>
+                    </div>
+                    <div class="modal-btns__container">
+                        <input type="submit" class="modal-btn" id="modal-btn" name="Crear"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="./js/index.js"></script>
+</html>

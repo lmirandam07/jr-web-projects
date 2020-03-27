@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous"
+        />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <title>Trivia App</title>
+</head>
+<body>
+    <main class="trivia">
+        <h2 class="title">TRIVIA APP</h2>
+        <section class="trivia__start" id="trivia-start">
+            <h3 class="subtitle">Make click to start 🧠</h3>
+            <button class="trivia__start-btn" id="start-btn">Start</button>
+        </section>
+        <section class="trivia__cat" id="trivia-cats">
+            <h3 class="subtitle">Choose the category 🧠</h3>
+            <div class="cat__container" id="cat-container">
+                <button class="category" data-id="11">Movies 📼</button>
+                <button class="category" data-id="12">Music 🎧</button>
+                <button class="category" data-id="15">Videogames 🎮</button>
+                <button class="category" data-id="17">Science 🔬</button>
+                <button class="category" data-id="19">Maths 🧮</button>
+                <button class="category" data-id="20">Mythology 🐲</button>
+                <button class="category" data-id="21">Sports ⚽</button>
+                <button class="category" data-id="22">Geography 🌎</button>
+                <button class="category" data-id="23">History 📜</button>
+                <button class="category" data-id="27">Animals 🐺</button>
+                <button class="category" data-id="28">Vehicles 🏍️</button>
+                <button class="category" data-id="32">Cartoons 🥴</button>
+
+            </div>
+        </section>
+        <section class="trivia__diff" id="trivia-diff">
+            <h3 class="subtitle">Choose the difficulty🧠</h3>
+            <div class="diff__container">
+                <button class="difficulty easy" id="easy" data-diff="easy" >Easy</button>
+                <button class="difficulty medium" id="medium" data-diff="medium">Medium</button>
+                <button class="difficulty hard" id="hard" data-diff="hard">Hard</button>
+            </div>
+        </section>
+
+        <section class="trivia__questions">
+            <small>1/<span class="question-num">10</span></small>
+            <h3 class="subtitle">Category</h3>
+            <p>¿When was created the universe?</p>
+            <form class="options">
+                <div><input type="radio" name="option" id="opt-1" class="option" checked><label for="opt-1">Opcion</label></input></div>
+                <div><input type="radio" name="option" id="opt-2" class="option"><label for="opt-2">Opcion</label></input></div>
+                <div><input type="radio" name="option" id="opt-3" class="option"><label for="opt-3">Opcion</label></input></div>
+                <div><input type="radio" name="option" id="opt-4" class="option"><label for="opt-4">Opcion</label></input></div>
+                <input type="submit" id="next-btn" value="Next">
+            </form>
+        </section>
+    </main>
+    <script src="./js/index.js">Opcion</script>
+</body>
+</html>
