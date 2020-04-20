@@ -16,8 +16,10 @@
         <h2 class="title">TRIVIA APP</h2>
         <section class="trivia__start" id="trivia-start">
             <h3 class="subtitle">Make click to start 🧠</h3>
+            <p>Choose your category, your difficulty and start playing with 10 random questions about it.</p>
             <button class="trivia__start-btn" id="start-btn">Start</button>
         </section>
+
         <section class="trivia__cat" id="trivia-cats">
             <h3 class="subtitle">Choose the category 🧠</h3>
             <div class="cat__container" id="cat-container">
@@ -36,16 +38,17 @@
 
             </div>
         </section>
+
         <section class="trivia__diff" id="trivia-diff">
             <h3 class="subtitle">Choose the difficulty🧠</h3>
             <div class="diff__container">
-                <button class="difficulty easy" id="easy" data-diff="easy" >Easy</button>
-                <button class="difficulty medium" id="medium" data-diff="medium">Medium</button>
-                <button class="difficulty hard" id="hard" data-diff="hard">Hard</button>
+                <button class="difficulty easy" data-diff="easy" >Easy</button>
+                <button class="difficulty medium" data-diff="medium">Medium</button>
+                <button class="difficulty hard" data-diff="hard">Hard</button>
             </div>
         </section>
 
-        <section class="trivia__questions">
+        <section class="trivia__questions" id="trivia-questions">
             <small>1/<span class="question-num">10</span></small>
             <h3 class="subtitle">Category</h3>
             <p>¿When was created the universe?</p>
@@ -54,8 +57,13 @@
                 <div><input type="radio" name="option" id="opt-2" class="option"><label for="opt-2">Opcion</label></input></div>
                 <div><input type="radio" name="option" id="opt-3" class="option"><label for="opt-3">Opcion</label></input></div>
                 <div><input type="radio" name="option" id="opt-4" class="option"><label for="opt-4">Opcion</label></input></div>
-                <input type="submit" id="next-btn" value="Next">
+                <input type="submit" class="next-btn" id="next-btn" value="Next">
             </form>
+        </section>
+
+        <section class="trivia__results" id="trivia-results">
+            <h4><span class="score">10</span>Final Score</h4>
+            <button class="play-again-btn" id="play-again-btn">Play again</button>
         </section>
     </main>
     <script src="./js/index.js">Opcion</script>
