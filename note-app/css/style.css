@@ -88,10 +88,11 @@ body {
 .note .note-header h3 {
     font-weight: 600;
     outline: none;
+    overflow: hidden;
     position: relative;
     padding: 1rem .5rem;
     color: var(--color-light);
-    
+
 }
 
 .note p {

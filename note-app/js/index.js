@@ -71,10 +71,10 @@ function createNote() {
     `;
 
     return noteEl;
-    
+
 }
 
-const deleteNote = (el) => document.getElementById(el.id).remove(); 
+const deleteNote = (el) => document.getElementById(el.id).remove();
 
 // * Event listeners
 addNoteBtn.addEventListener("click", () => modal.style.display = "flex");
